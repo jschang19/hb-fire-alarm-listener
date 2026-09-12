@@ -1,0 +1,39 @@
+FSKJ222 detector regression
+
+PASS  real/room_full                         expected_events=1  got=1  valid_sweeps=2
+      first_event=6.752s slope=3504Hz/s r2=0.9965 span=2420Hz prom=30.0dB
+PASS  real/room_preamble_only                expected_events=0  got=0  valid_sweeps=0
+PASS  real/room_preamble_plus_one_sweep      expected_events=0  got=0  valid_sweeps=1
+PASS  real/room_two_sweeps_no_preamble       expected_events=0  got=0  valid_sweeps=2
+PASS  real/room_voice_only                   expected_events=0  got=0  valid_sweeps=0
+PASS  real/room_minus_6dB                    expected_events=1  got=1  valid_sweeps=2
+      first_event=6.752s slope=3496Hz/s r2=0.9961 span=2339Hz prom=29.8dB
+PASS  real/room_minus_12dB                   expected_events=1  got=1  valid_sweeps=2
+      first_event=6.752s slope=3490Hz/s r2=0.9953 span=2209Hz prom=29.7dB
+PASS  real/room_minus_18dB                   expected_events=1  got=1  valid_sweeps=2
+      first_event=6.816s slope=3520Hz/s r2=0.9954 span=2242Hz prom=29.0dB
+PASS  real/direct_full_three_cycles          expected_events=3  got=3  valid_sweeps=6
+      first_event=3.184s slope=3619Hz/s r2=0.9999 span=2292Hz prom=47.5dB
+PASS  real/direct_preamble_only              expected_events=0  got=0  valid_sweeps=0
+PASS  real/direct_one_sweep_only             expected_events=0  got=0  valid_sweeps=1
+PASS  real/direct_two_sweeps_no_preamble     expected_events=0  got=0  valid_sweeps=2
+PASS  real/direct_voice_only_1               expected_events=0  got=0  valid_sweeps=0
+PASS  real/direct_cycle_2                    expected_events=1  got=1  valid_sweeps=2
+      first_event=3.248s slope=3620Hz/s r2=0.9999 span=2292Hz prom=48.2dB
+PASS  real/direct_voice_only_2               expected_events=0  got=0  valid_sweeps=0
+PASS  real/direct_minus_18dB                 expected_events=3  got=3  valid_sweeps=6
+      first_event=3.184s slope=3619Hz/s r2=0.9999 span=2292Hz prom=47.5dB
+PASS  real/direct_minus_30dB                 expected_events=3  got=3  valid_sweeps=6
+      first_event=3.184s slope=3619Hz/s r2=0.9999 span=2292Hz prom=47.5dB
+PASS  synthetic/exact_structure              expected_events=1  got=1  valid_sweeps=2
+      first_event=3.024s slope=3648Hz/s r2=0.9998 span=2294Hz prom=59.2dB
+PASS  negative/2.7kHz_tone_only              expected_events=0  got=0  valid_sweeps=0
+PASS  negative/white_noise                   expected_events=0  got=0  valid_sweeps=0
+PASS  negative/speech_like                   expected_events=0  got=0  valid_sweeps=0
+PASS  negative/fixed_siren                   expected_events=0  got=0  valid_sweeps=0
+PASS  negative/wrong_pair_gap                expected_events=0  got=0  valid_sweeps=2
+PASS  negative/wrong_sweep_span              expected_events=0  got=0  valid_sweeps=0
+PASS  negative/two_sweeps_no_preamble        expected_events=0  got=0  valid_sweeps=2
+PASS  negative/preamble_plus_one_sweep       expected_events=0  got=0  valid_sweeps=1
+
+All 26 regression tests passed.

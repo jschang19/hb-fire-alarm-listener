@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>local.fire-alarm-listener</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>__HOME__/fire-alarm-listener/.venv/bin/python</string>
+        <string>__HOME__/fire-alarm-listener/fire_alarm_listener.py</string>
+        <string>--webhook-base</string>
+        <string>http://127.0.0.1:51828/</string>
+        <string>--accessory-id</string>
+        <string>livingRoomFireAlarm</string>
+        <string>--clear-after</string>
+        <string>30</string>
+        <string>--startup-clear-after</string>
+        <string>20</string>
+        <string>--confirm-cycles</string>
+        <string>1</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>__HOME__/fire-alarm-listener</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>ProcessType</key>
+    <string>Background</string>
+
+    <key>ThrottleInterval</key>
+    <integer>10</integer>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PYTHONUNBUFFERED</key>
+        <string>1</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Logs/fire-alarm-listener.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Logs/fire-alarm-listener.err.log</string>
+</dict>
+</plist>
